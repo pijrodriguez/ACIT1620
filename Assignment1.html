@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1</title>
+    </head>
+    <style>
+        body {
+            margin:0;
+        }
+        #banner{
+            position:relative;
+            background-image: url("http://photoblog.mrussellphotography.com/photography/2012/april/vancouver/vancouver-downtown-evening-panorama-22282.jpg");
+            width:100vw;
+            height:400px;
+            background-repeat:no-repeat;
+            background-position:center top;
+            background-size:cover;
+        }
+        #tagline{
+            color:rgba(255, 255, 255, 0.8);
+            font-size: 80px;
+            font-family: impact; 
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        #my_pic{
+            width: 200px;
+            height: auto;
+            position:absolute;
+            top: 70%;
+            left: 41%;
+            object-position: center;
+            border-radius: 50px;
+            border:7px solid #000000;
+        }
+        #name_overlay{
+            width:100vw;
+            height:250px;
+            background-size:cover;
+            background-color: cadetblue;
+            margin-top: 0;
+        }
+        #name{
+            color:black;
+            font-size: 40px;
+            font-family: Haettenschweiler;
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 4% 0 0 0;
+        }
+        #second_overlay{
+            width:100vw;
+            height:250px;
+            background-size:cover;
+            background-color: darkslategrey;
+            position: relative;
+        }
+        .division {
+            width: 20%;
+            height: 250px;
+            float: left;
+        }
+        .box{
+            width: 12%;
+            height: 60%;
+            background-color:cornflowerblue;
+            margin:100px 0px 0px 0px;
+            position: absolute;
+        }
+        .smallbox{
+            width:85px;
+            height: 29px;
+            background-color: crimson;
+            margin: 70px 0px 0px 79px;
+            position: absolute;
+        }
+        #bio{
+            width:100vw;
+            height:500px;
+            background-color: #21618C;
+            }
+        #second_pic{
+            margin: 0px 30px 0px 40px;
+            width: 400px;
+            height:400px;
+            float: left;
+            border:7px solid #A3E4D7;
+        }
+        #paragraph{
+            font-family: cursive;
+            font-size: 120%;
+            float: left;
+            margin-top: 50px;
+            position: static;
+        }
+        #banner_two{
+            position:relative;
+            background-image: url("http://www.planwallpaper.com/static/images/ZhGEqAP.jpg");
+            width:100vw;
+            height:400px;
+            background-repeat:no-repeat;
+            background-position:center top;
+            background-size:cover;
+        }
+        #tagline_two{
+            color:rgba(255, 255, 255, 0.8);
+            font-size: 80px;
+            font-family: impact; 
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+    </style>
+    
+    <body>
+        <div id='banner'>
+            <h3 id='tagline'>This is my profile.</h3>
+            <img id='my_pic' src="http://s18.postimg.org/9d75a6kg9/11254701_1310326515650008_8201025969251113760_o.jpg"/>
+        </div>
+        <div id='name_overlay'>
+            <h3 id='name'>PATRICK JOHN RODRIGUEZ</h3>
+        </div>
+        <div id='second_overlay'>
+            <div class = 'division'>
+                <div class = 'smallbox'></div>
+                <div><img src="http://placekitten.com/400/400" class='box'></div>
+            </div>
+            <div class = 'division'>
+                <div class = 'smallbox'></div>
+                <div><img src="http://placekitten.com/400/400" class='box'></div>
+            </div>
+            <div class = 'division'>
+                <div class = 'smallbox'></div>
+                <div><img src="http://placekitten.com/400/400" class='box'></div>
+            </div>
+            <div class = 'division'>
+                <div class = 'smallbox'></div>
+                <div><img src="http://placekitten.com/400/400" class='box'></div>
+            </div>
+            <div class = 'division'>
+                <div class = 'smallbox'></div>
+                <div><img src="http://placekitten.com/400/400" class='box'></div>
+            </div>
+        </div>
+        <div id="bio">
+            <div>
+            <p id='paragraph'><img id='second_pic' src="http://s18.postimg.org/l33kttel5/14409411_1467015993314392_3000355587133235641_o.jpg"/>Born in Manila, Philippines on September 21st of 1997. My hobbies are skateboarding, playing basketball and video games. I also have a passion for dancing. Back in the Philippines, I was in a group named 'Power Impact Dancers' and I was able to share some fun memories with them winning bronze medal in the Hip Hop International Philippines 2015 (A qualifier for the biggest Hip Hop Competition in the world which takes in Las Vegas every year). I'm Currently working in McDonald's and I hate it.</p>
+            </div>
+        </div>
+        <div id="banner_two">
+            <h3 id="tagline_two">I don't have a tagline.</h3>
+        </div>
+    </body>
+</html>
