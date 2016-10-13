@@ -34,6 +34,7 @@
             object-position: center;
             border-radius: 50px;
             border:7px solid #000000;
+            transition: 0.5s;
         }
         #name_overlay{
             width:100vw;
@@ -56,8 +57,9 @@
             width:100vw;
             height:250px;
             background-size:cover;
-            background-color: darkslategrey;
+            background-color: rgb(10, 80, 100);
             position: relative;
+            transition: 1s;
         }
         .division {
             width: 20%;
@@ -70,13 +72,15 @@
             background-color:cornflowerblue;
             margin:100px 0px 0px 0px;
             position: absolute;
+            
         }
         .smallbox{
-            width:85px;
+            width:100px;
             height: 29px;
             background-color: crimson;
-            margin: 70px 0px 0px 79px;
+            margin: 70px 0px 0px 65px;
             position: absolute;
+            font-family: cursive;
         }
         #bio{
             width:100vw;
@@ -115,6 +119,11 @@
             right: 0;
             text-align: center;
         }
+        #box4 {
+            transition: 0.5s;
+        }
+        #box5 {
+        }
     </style>
     
     <body>
@@ -127,24 +136,24 @@
         </div>
         <div id='second_overlay'>
             <div class = 'division'>
-                <div class = 'smallbox'></div>
-                <div><img src="http://placekitten.com/400/400" class='box'></div>
+                <div class = 'smallbox'>GO BRIGHT</div>
+                <div><img id='box1'src="http://placekitten.com/400/400" class='box'></div>
             </div>
             <div class = 'division'>
-                <div class = 'smallbox'></div>
-                <div><img src="http://placekitten.com/400/400" class='box'></div>
+                <div class = 'smallbox'>GO BLACK</div>
+                <div><img id='box2'src="http://placekitten.com/400/400" class='box'></div>
             </div>
             <div class = 'division'>
-                <div class = 'smallbox'></div>
-                <div><img src="http://placekitten.com/400/400" class='box'></div>
+                <div class = 'smallbox'>GO WHITE</div>
+                <div><img id='box3' src="http://placekitten.com/400/400" class='box'></div>
             </div>
             <div class = 'division'>
-                <div class = 'smallbox'></div>
-                <div><img src="http://placekitten.com/400/400" class='box'></div>
+                <div class = 'smallbox'>GO BIG</div>
+                <div><img id='box4' src="http://placekitten.com/400/400" class='box'></div>
             </div>
             <div class = 'division'>
-                <div class = 'smallbox'></div>
-                <div><img src="http://placekitten.com/400/400" class='box'></div>
+                <div class = 'smallbox'>DONT CLICK</div>
+                <div><img id='box5'src="http://placekitten.com/400/400" class='box'></div>
             </div>
         </div>
         <div id="bio">
@@ -156,4 +165,58 @@
             <h3 id="tagline_two">I don't have a tagline.</h3>
         </div>
     </body>
+    <script>
+        var profPic = document.getElementById("my_pic");
+        var picOne = document.getElementById("box1");
+        var picTwo = document.getElementById("box2");
+        var picThree = document.getElementById("box3");
+        var picFour = document.getElementById("box4");
+        var picFive = document.getElementById("box5");
+        var divColor = document.getElementById("second_overlay")
+        var profWidth = 200;
+        var profHeight = 200;
+        var picWidth = 180;
+        var picHeight = 180;
+        var r = 10;
+        var g = 80;
+        var b = 100;
+        
+        profPic.onclick = function(){
+            profPic.style.width = profWidth+"px";
+            profPic.style.height = profHeight+"px";
+            profWidth = profWidth + 50;
+            profHeight = profHeight + 50;
+        }
+        
+        picOne.onclick = function(){
+            r = r + 10;
+            g = g + 50;
+            b = b + 10;
+            divColor.style.backgroundColor = "rgb("+r+", "+g+", "+b+")";
+        }
+        picTwo.onclick = function(){
+            r = 0;
+            g = 0;
+            b = 0;
+            divColor.style.backgroundColor = "rgb("+r+", "+g+", "+b+")";
+        }
+        
+        picThree.onclick = function(){
+            r = 255;
+            g = 255;
+            b = 255;
+            divColor.style.backgroundColor = "rgb("+r+", "+g+", "+b+")";
+        }
+        picFour.onclick = function(){
+            picFour.style.width = picWidth+"px";
+            picFour.style.height = picHeight+"px";
+            picWidth = picWidth + 20;
+            picHeight = picHeight + 20;
+        }
+        picFive.onclick = function(){
+            picFive.src = "https://i.ytimg.com/vi/LksB2RWyDbU/hqdefault.jpg";
+            picFive.style.width = "200px";
+            picFive.style.height = "200px";
+        }
+    </script>
 </html>
