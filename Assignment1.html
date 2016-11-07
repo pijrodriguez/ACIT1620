@@ -11,86 +11,79 @@
             position:relative;
             background-image: url("http://photoblog.mrussellphotography.com/photography/2012/april/vancouver/vancouver-downtown-evening-panorama-22282.jpg");
             width:100vw;
-            height:400px;
+            height:50vh;
             background-repeat:no-repeat;
             background-position:center top;
             background-size:cover;
         }
         #tagline{
             color:rgba(255, 255, 255, 0.8);
-            font-size: 80px;
+            font-size: 6vw;
             font-family: impact; 
             position: absolute;
+            margin: 5%;
             left: 0;
             right: 0;
             text-align: center;
         }
         #my_pic{
-            width: 200px;
+            width: 15%;
             height: auto;
             position:absolute;
-            top: 70%;
-            left: 41%;
-            object-position: center;
-            border-radius: 50px;
-            border:7px solid #000000;
-            transition: 0.5s;
+            margin: -10% 0% 0% 42%;
+            border-radius: 40px;
+            border:5px solid #000000;
         }
         #name_overlay{
             width:100vw;
-            height:250px;
+            height:40vh;
             background-size:cover;
             background-color: cadetblue;
             margin-top: 0;
         }
         #name{
             color:black;
-            font-size: 40px;
+            font-size: 3vw;
             font-family: Haettenschweiler;
             position: absolute;
             left: 0;
             right: 0;
             text-align: center;
-            padding: 4% 0 0 0;
+            margin: 6%;
         }
         #second_overlay{
             width:100vw;
-            height:250px;
+            height:40vh;
             background-size:cover;
             background-color: rgb(10, 80, 100);
             position: relative;
-            transition: 1s;
         }
         .division {
             width: 20%;
             height: 250px;
             float: left;
+            margin: 3% 0 0 0;
         }
         .box{
-            width: 12%;
-            height: 60%;
-            background-color:cornflowerblue;
-            margin:100px 0px 0px 0px;
-            position: absolute;
-            
+            width: 150px;
+            height: 150px;
         }
         .smallbox{
-            width:100px;
-            height: 29px;
+            width:7vw;
+            height: 4vh;
             background-color: crimson;
-            margin: 70px 0px 0px 65px;
-            position: absolute;
             font-family: cursive;
+            font-size: 1vw;
         }
         #bio{
             width:100vw;
-            height:500px;
+            height:80vh;
             background-color: #21618C;
             }
         #second_pic{
-            margin: 0px 30px 0px 40px;
-            width: 400px;
-            height:400px;
+            width: 30vw;
+            height:30vw;
+            margin: 2% 0 0 2%;
             float: left;
             border:7px solid #A3E4D7;
         }
@@ -98,21 +91,21 @@
             font-family: cursive;
             font-size: 120%;
             float: left;
-            margin-top: 50px;
-            position: static;
+            width: 50vw;
+            margin: 2% 0 0 7%;
         }
         #banner_two{
             position:relative;
             background-image: url("http://www.planwallpaper.com/static/images/ZhGEqAP.jpg");
             width:100vw;
-            height:400px;
+            height:50vh;
             background-repeat:no-repeat;
             background-position:center top;
             background-size:cover;
         }
         #tagline_two{
             color:rgba(255, 255, 255, 0.8);
-            font-size: 80px;
+            font-size: 6vw;
             font-family: impact; 
             position: absolute;
             left: 0;
@@ -122,45 +115,126 @@
         #box4 {
             transition: 0.5s;
         }
-        #box5 {
+        
+        @media only screen and (max-width:320px){
+           #second_overlay{
+                height:120vh;
+            }
+            
+            #bio{
+                height:170vh;
+            }
+            
+            #second_pic{
+                width: 40vw;
+                height:40vw;
+                margin: 2% 0 0 23%;
+            }
+            .smallbox{
+                font-size: 2vw;
+            }
+            #paragraph{
+            margin: 2% 0 0 20%;
+            }
         }
+        
+        @media only screen and (max-width:480px) and (min-width:320px){
+            #second_overlay{
+                height:120vh;
+            }
+            
+            #bio{
+                height:160vh;
+            }
+            
+            #second_pic{
+                width: 40vw;
+                height:40vw;
+                margin: 2% 0 0 23%;
+            }
+            .smallbox{
+                font-size: 2vw;
+            }
+            #paragraph{
+            margin: 2% 0 0 20%;
+            }
+        }
+        @media only screen and (max-width:960px) and (min-width:480px){
+            #second_overlay{
+                height:120vh;
+            }
+            #bio{
+                height:120vh;
+            }
+            #second_pic{
+                width: 40vw;
+                height:40vw;
+                margin: 2% 0 0 23%;
+            }
+            #paragraph{
+            margin: 2% 0 0 20%;
+            }
+        }
+        @media only screen and (max-width:1200px) and (min-width:960px){
+            #second_overlay{
+                height:80vh;
+            }
+            #bio{
+                height:120vh;
+            }
+        }
+     
     </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     <body>
         <div id='banner'>
             <h3 id='tagline'>This is my profile.</h3>
-            <img id='my_pic' src="http://s18.postimg.org/9d75a6kg9/11254701_1310326515650008_8201025969251113760_o.jpg"/>
         </div>
+        <div><img id='my_pic' src="http://s18.postimg.org/9d75a6kg9/11254701_1310326515650008_8201025969251113760_o.jpg"/></div>
         <div id='name_overlay'>
             <h3 id='name'>PATRICK JOHN RODRIGUEZ</h3>
         </div>
         <div id='second_overlay'>
-            <div class = 'division'>
+            <div class = 'col-lg-2 col-md-4 col-sm-6 col-xs-6 division'>
                 <div class = 'smallbox'>GO BRIGHT</div>
                 <div><img id='box1'src="http://placekitten.com/400/400" class='box'></div>
             </div>
-            <div class = 'division'>
+            <div class = 'col-lg-2 col-md-4 col-sm-6 col-xs-6 division'>
                 <div class = 'smallbox'>GO BLACK</div>
                 <div><img id='box2'src="http://placekitten.com/400/400" class='box'></div>
             </div>
-            <div class = 'division'>
+            <div class = 'col-lg-2 col-md-4 col-sm-6 col-xs-6 division'>
                 <div class = 'smallbox'>GO WHITE</div>
                 <div><img id='box3' src="http://placekitten.com/400/400" class='box'></div>
             </div>
-            <div class = 'division'>
+            <div class = 'col-lg-2 col-md-4 col-sm-6 col-xs-6 division'>
                 <div class = 'smallbox'>GO BIG</div>
                 <div><img id='box4' src="http://placekitten.com/400/400" class='box'></div>
             </div>
-            <div class = 'division'>
+            <div class = 'col-lg-2 col-md-4 col-sm-6 col-xs-6 division'>
                 <div class = 'smallbox'>DONT CLICK</div>
                 <div><img id='box5'src="http://placekitten.com/400/400" class='box'></div>
             </div>
-        </div>
-        <div id="bio">
-            <div>
-            <p id='paragraph'><img id='second_pic' src="http://s18.postimg.org/l33kttel5/14409411_1467015993314392_3000355587133235641_o.jpg"/>Born in Manila, Philippines on September 21st of 1997. My hobbies are skateboarding, playing basketball and video games. I also have a passion for dancing. Back in the Philippines, I was in a group named 'Power Impact Dancers' and I was able to share some fun memories with them winning bronze medal in the Hip Hop International Philippines 2015 (A qualifier for the biggest Hip Hop Competition in the world which takes in Las Vegas every year). I'm Currently working in McDonald's and I hate it.</p>
+            <div class = 'col-lg-2 col-md-4 col-sm-6 col-xs-6 division'>
+                <div class = 'smallbox'>NOTHING</div>
+                <div><img id='box6'src="http://placekitten.com/400/400" class='box'></div>
             </div>
         </div>
+        
+        <div id="bio">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" >
+            <img id='second_pic' src="http://s18.postimg.org/l33kttel5/14409411_1467015993314392_3000355587133235641_o.jpg"/></div>
+            <div id='paragraph' class="col-lg-9 col-md-9 col-sm-12 col-xs-12 ">Born in Manila, Philippines on September 21st of 1997. My hobbies are skateboarding, playing basketball and video games. I also have a passion for dancing. Back in the Philippines, I was in a group named 'Power Impact Dancers' and I was able to share some fun memories with them winning bronze medal in the Hip Hop International Philippines 2015 (A qualifier for the biggest Hip Hop Competition in the world which takes in Las Vegas every year). I'm Currently working in McDonald's and I hate it.</div>
+            </div>
+            
         <div id="banner_two">
             <h3 id="tagline_two">I don't have a tagline.</h3>
         </div>
