@@ -1,0 +1,79 @@
+.inputs{
+    height:50px;
+    width: 44vw;
+    margin: 10px 0 0 0;
+    background-color: #F5F6CE;
+}
+
+#comments{
+    height:50px;
+    width: 91vw;
+    margin: 10px 0 0 0;
+    background-color: #F5F6CE;
+}
+
+#movie{
+    margin: 0 0 0 2vw;
+}
+
+#submit{
+    height:5vw;
+    width:20vw;
+    margin: 1vw 0 0 0;
+}
+#bottom_base{
+    margin: 0 0 0 0;
+}
+
+#comment_box{
+    background-color: deepskyblue;
+    width: 70vw;
+    height: 10vw;
+    font-size: 2vw;
+    margin: 0 0 0 2vw;
+    text-align: center;
+}
+
+#user_div{
+    position: absolute;
+    background-color: beige;
+    width: 20vw;
+    height: 5vw;
+    margin: -2vw 0 0 52vw;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#image{
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+}
+
+#poster{
+    position: absolute;
+    width:8vw;
+    height: 9vw;
+}
+
+#img_div{
+    position: absolute;
+    background-color: yellow;
+    width: 8vw;
+    height: 8vw;
+    margin: -12vw 0 0 0vw;
+}
+
+#poster_div{
+    position: absolute;
+    background-color: burlywood;
+    width:8vw;
+    height: 9vw;
+    margin: -15vw 0 0 64vw;
+}
+
+#output_box{
+    width: 80vw;
+    height: 20vw;
+    margin: 5% 0 0 10vw;
+}
